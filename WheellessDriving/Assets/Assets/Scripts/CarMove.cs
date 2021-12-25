@@ -5,10 +5,6 @@ using UnityEngine.UI;
 public class CarMove : MonoBehaviour
 {
     [SerializeField] Joystick joystick;
-    void Start()
-    {
-        
-    }
     void Update()
     {
         float X = joystick.Horizontal * 3.5f;

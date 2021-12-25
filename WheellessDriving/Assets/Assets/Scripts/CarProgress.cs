@@ -7,10 +7,6 @@ public class CarProgress : MonoBehaviour
     [SerializeField] public float CarSpeed;
     [SerializeField] public float HizlanmaOrani;
     [SerializeField] public int Can;
-    void Start()
-    {
-
-    }
     void Update()
     {
         transform.Translate(Vector3.forward * CarSpeed * Time.deltaTime, Space.World);
