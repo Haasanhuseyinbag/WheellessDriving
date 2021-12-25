@@ -12,5 +12,13 @@ public class CarProgress : MonoBehaviour
         transform.Translate(Vector3.forward * CarSpeed * Time.deltaTime, Space.World);
         CarSpeed += Time.timeSinceLevelLoad / 1000 * HizlanmaOrani;
         CarSpeed = Mathf.Clamp(CarSpeed, 1, 120);
+        if (Can <= 0)
+        {
+            Death();
+        }
+    }
+    void Death()
+    {
+        Time.timeScale = 0;
     }
 }
