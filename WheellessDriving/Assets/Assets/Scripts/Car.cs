@@ -8,6 +8,7 @@ public class Car : MonoBehaviour
     CarProgress progress;
     AudioSource source;
     [SerializeField] AudioClip KazaSesi;
+    [SerializeField] public int Can;
     void Start()
     {
         source = GetComponent<AudioSource>();
@@ -26,12 +27,16 @@ public class Car : MonoBehaviour
     {
         if (collision.transform.tag == "Engel")
         {
-            progress.Can -= 1;
+            Can -= 1;
             source.PlayOneShot(KazaSesi);
-            if (progress.Can > 0)
+            if (Can > 0)
             {
                 StartCoroutine(Yavaþlat());
                 Destroy(collision.transform.gameObject);
+            }
+            if (Can <= 0)
+            {
+                Death();
             }
         }
     }
@@ -40,5 +45,10 @@ public class Car : MonoBehaviour
         progress.CarSpeed = 2;
         yield return new WaitForSeconds(1);
         progress.CarSpeed = 10;
+    }
+    void Death()
+    {
+        GetComponent<CarMove>().enabled = false;
+        Time.timeScale = 0;
     }
 }
