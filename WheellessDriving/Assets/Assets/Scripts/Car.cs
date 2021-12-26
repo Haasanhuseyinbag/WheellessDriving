@@ -6,8 +6,11 @@ public class Car : MonoBehaviour
 {
     Gold gold;
     CarProgress progress;
+    AudioSource source;
+    [SerializeField] AudioClip KazaSesi;
     void Start()
     {
+        source = GetComponent<AudioSource>();
         gold = GameObject.Find("GameControl").GetComponent<Gold>();
         progress = GameObject.FindGameObjectWithTag("Araba").GetComponent<CarProgress>();
     }
@@ -24,6 +27,7 @@ public class Car : MonoBehaviour
         if (collision.transform.tag == "Engel")
         {
             progress.Can -= 1;
+            source.PlayOneShot(KazaSesi);
             if (progress.Can > 0)
             {
                 StartCoroutine(Yavaþlat());

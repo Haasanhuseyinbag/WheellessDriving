@@ -19,6 +19,7 @@ public class CarProgress : MonoBehaviour
     }
     void Death()
     {
+        GetComponent<CarMove>().enabled = false;
         Time.timeScale = 0;
     }
 }
