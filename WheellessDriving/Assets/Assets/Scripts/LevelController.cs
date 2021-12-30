@@ -5,18 +5,8 @@ using UnityEngine;
 public class LevelController : MonoBehaviour
 {
     [SerializeField] public GameObject Level;
-    [SerializeField] public Transform LevelSpawner;
-    public float Mod;
-    void Update()
+    public void CreateLevel(float CreateZ)
     {
-        Mod = transform.position.z % 10;
-        if (Mod == 0)
-        {
-            CreateLevel();
-        }
-    }
-    void CreateLevel()
-    {
-        Instantiate(Level, LevelSpawner.position, Quaternion.identity);
+        Instantiate(Level, new Vector3(0, 0, CreateZ), Quaternion.identity);
     }
 }

@@ -1,5 +1,49 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3581355391877064358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 752874901685287819}
+  - component: {fileID: 8618409995445025461}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: LevelYarat
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &752874901685287819
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3581355391877064358}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4190434085394342793}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8618409995445025461
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3581355391877064358}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9, y: 2, z: 0.1}
+  m_Center: {x: 0, y: 0, z: 5}
 --- !u!1 &4190434084680046022
 GameObject:
   m_ObjectHideFlags: 0
@@ -17,7 +61,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4190434084680046023
 Transform:
@@ -110,7 +154,7 @@ GameObject:
   m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4190434085394342793
 Transform:
@@ -143,6 +187,7 @@ Transform:
   - {fileID: 5070132365894593137}
   - {fileID: 5070132366142228014}
   - {fileID: 5070132365919008103}
+  - {fileID: 752874901685287819}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -157,7 +202,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 9, y: 2, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4190434086203199337
 GameObject:
@@ -176,7 +221,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4190434086203199338
 Transform:
@@ -261,6 +306,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4190434085394342793}
     m_Modifications:
+    - target: {fileID: 555783736233525956, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3640343056757418799, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -321,6 +370,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: YolKenari (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4165486700503871893, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504657668902403744, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839377382381252087, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609745994188049620, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
 --- !u!4 &622184080969513195 stripped
@@ -335,9 +400,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4190434085394342793}
     m_Modifications:
+    - target: {fileID: 497518834351665863, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280543110890556554, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223344484515099296, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7963857809334257161, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8588368560215211995, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
       propertyPath: m_Name
       value: Agac (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588368560215211995, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8969995214369514849, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
       propertyPath: m_RootOrder
@@ -409,9 +494,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4190434085394342793}
     m_Modifications:
+    - target: {fileID: 497518834351665863, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280543110890556554, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223344484515099296, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7963857809334257161, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8588368560215211995, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
       propertyPath: m_Name
       value: Agac (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588368560215211995, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8969995214369514849, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
       propertyPath: m_RootOrder
@@ -483,6 +588,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4190434085394342793}
     m_Modifications:
+    - target: {fileID: 555783736233525956, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3640343056757418799, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -543,6 +652,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: YolKenari (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4165486700503871893, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504657668902403744, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839377382381252087, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609745994188049620, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
 --- !u!4 &622184081261697389 stripped
@@ -557,6 +682,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4190434085394342793}
     m_Modifications:
+    - target: {fileID: 555783736233525956, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3640343056757418799, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -617,6 +746,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: YolKenari (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4165486700503871893, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504657668902403744, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839377382381252087, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609745994188049620, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
 --- !u!4 &622184081584366498 stripped
@@ -631,6 +776,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4190434085394342793}
     m_Modifications:
+    - target: {fileID: 555783736233525956, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3640343056757418799, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -691,6 +840,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: YolKenari
       objectReference: {fileID: 0}
+    - target: {fileID: 4165486700503871893, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504657668902403744, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839377382381252087, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609745994188049620, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
 --- !u!4 &622184081712570982 stripped
@@ -705,9 +870,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4190434085394342793}
     m_Modifications:
+    - target: {fileID: 497518834351665863, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280543110890556554, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223344484515099296, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7963857809334257161, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8588368560215211995, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
       propertyPath: m_Name
       value: Agac
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588368560215211995, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8969995214369514849, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
       propertyPath: m_RootOrder
@@ -779,6 +964,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4190434085394342793}
     m_Modifications:
+    - target: {fileID: 555783736233525956, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3640343056757418799, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -839,6 +1028,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: YolKenari (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4165486700503871893, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504657668902403744, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839377382381252087, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609745994188049620, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
 --- !u!4 &622184081957708805 stripped
@@ -853,9 +1058,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4190434085394342793}
     m_Modifications:
+    - target: {fileID: 497518834351665863, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280543110890556554, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223344484515099296, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7963857809334257161, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8588368560215211995, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
       propertyPath: m_Name
       value: Agac (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588368560215211995, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8969995214369514849, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
       propertyPath: m_RootOrder
@@ -927,6 +1152,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4190434085394342793}
     m_Modifications:
+    - target: {fileID: 555783736233525956, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3640343056757418799, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -987,6 +1216,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: YolKenari (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4165486700503871893, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504657668902403744, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839377382381252087, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609745994188049620, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
 --- !u!4 &622184082255905739 stripped
@@ -1001,6 +1246,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4190434085394342793}
     m_Modifications:
+    - target: {fileID: 555783736233525956, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3640343056757418799, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -1061,6 +1310,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: YolKenari (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4165486700503871893, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504657668902403744, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839377382381252087, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609745994188049620, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
 --- !u!4 &622184082175320077 stripped
@@ -1075,6 +1340,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4190434085394342793}
     m_Modifications:
+    - target: {fileID: 555783736233525956, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3640343056757418799, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1135,6 +1404,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: YolKenari (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4165486700503871893, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504657668902403744, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839377382381252087, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609745994188049620, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
 --- !u!4 &622184082299725362 stripped
@@ -1149,6 +1434,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4190434085394342793}
     m_Modifications:
+    - target: {fileID: 555783736233525956, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3640343056757418799, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -1209,6 +1498,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: YolKenari (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4165486700503871893, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504657668902403744, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839377382381252087, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609745994188049620, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
 --- !u!4 &622184082509253713 stripped
@@ -1223,6 +1528,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4190434085394342793}
     m_Modifications:
+    - target: {fileID: 555783736233525956, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3640343056757418799, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1283,6 +1592,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: YolKenari (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4165486700503871893, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504657668902403744, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839377382381252087, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609745994188049620, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69ffe9d550984794d8289b3076bc3acd, type: 3}
 --- !u!4 &622184082487928395 stripped
@@ -1297,9 +1622,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4190434085394342793}
     m_Modifications:
+    - target: {fileID: 497518834351665863, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280543110890556554, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223344484515099296, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7963857809334257161, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8588368560215211995, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
       propertyPath: m_Name
       value: Agac (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588368560215211995, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8969995214369514849, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
       propertyPath: m_RootOrder
@@ -1371,9 +1716,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4190434085394342793}
     m_Modifications:
+    - target: {fileID: 497518834351665863, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280543110890556554, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223344484515099296, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7963857809334257161, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8588368560215211995, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
       propertyPath: m_Name
       value: Agac (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588368560215211995, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8969995214369514849, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
       propertyPath: m_RootOrder
@@ -1445,9 +1810,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4190434085394342793}
     m_Modifications:
+    - target: {fileID: 497518834351665863, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280543110890556554, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223344484515099296, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7963857809334257161, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8588368560215211995, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
       propertyPath: m_Name
       value: Agac (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588368560215211995, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8969995214369514849, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
       propertyPath: m_RootOrder
@@ -1519,9 +1904,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4190434085394342793}
     m_Modifications:
+    - target: {fileID: 497518834351665863, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280543110890556554, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223344484515099296, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7963857809334257161, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8588368560215211995, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
       propertyPath: m_Name
       value: Agac (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588368560215211995, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8969995214369514849, guid: 8e05c8d573ed4364ea1f13d3a3f34196, type: 3}
       propertyPath: m_RootOrder
