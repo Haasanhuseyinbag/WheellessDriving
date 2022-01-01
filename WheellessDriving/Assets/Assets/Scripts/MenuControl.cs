@@ -14,13 +14,13 @@ public class MenuControl : MonoBehaviour
     float AktifCan;
     void Start()
     {
-        TotalAltin = PlayerPrefs.GetInt("TotalAltin");
         HighScore = PlayerPrefs.GetFloat("HighScore");
         HighScoreText.text = ((int)HighScore).ToString();
     }
     void Update()
     {
         AktifCan = PlayerPrefs.GetFloat("Can");
+        TotalAltin = PlayerPrefs.GetFloat("TotalAltin");
         TotalAltinText.text = TotalAltin.ToString();
         Maliyet.text = AktifMaliyet.ToString();
         CanText.text = AktifCan.ToString();
@@ -29,7 +29,6 @@ public class MenuControl : MonoBehaviour
             case 0:
                 AktifMaliyet = Maliyetler[0];
                 UyariText.text = "Ýlk Canýný Almayý Unutma";
-                BaslamaButonu.interactable = false;
                 break;
             case 1:
                 AktifMaliyet = Maliyetler[1];
@@ -50,6 +49,14 @@ public class MenuControl : MonoBehaviour
                 Can1.text = "Max Cana Ulaþýldý";
                 break;
         }
+        if (AktifCan == 0)
+        {
+            BaslamaButonu.interactable = false;
+        }
+        else
+        {
+            BaslamaButonu.interactable = true;
+        }
 
     }
     public void Yukselt()
@@ -63,7 +70,6 @@ public class MenuControl : MonoBehaviour
             PlayerPrefs.SetFloat("Can", AktifCan += 1);
             TotalAltin -= AktifMaliyet;
             PlayerPrefs.SetFloat("TotalAltin", TotalAltin);
-            BaslamaButonu.interactable = true;
         }
         if (TotalAltin < AktifMaliyet)
         {

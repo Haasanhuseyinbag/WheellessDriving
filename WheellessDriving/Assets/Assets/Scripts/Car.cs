@@ -7,12 +7,14 @@ public class Car : MonoBehaviour
     Gold gold;
     CarProgress progress;
     AudioSource source;
+    Control control;
     [SerializeField] AudioClip KazaSesi, AltinToplama;
     [SerializeField] public float Can, Puan;
     [SerializeField] public TMP_Text CanText, PuanText;
     [SerializeField] GameObject DeathScreen;
-    int TotalAltin;
+    float TotalAltin;
     float HighScore;
+    bool Bittimi;
     void Start()
     {
         Can = PlayerPrefs.GetFloat("Can");
@@ -20,6 +22,7 @@ public class Car : MonoBehaviour
         source = GetComponent<AudioSource>();
         gold = GameObject.Find("GameControl").GetComponent<Gold>();
         progress = GameObject.FindGameObjectWithTag("Araba").GetComponent<CarProgress>();
+        control= GameObject.Find("GameControl").GetComponent<Control>();
     }
     void Update()
     {
@@ -33,14 +36,16 @@ public class Car : MonoBehaviour
         {
             Can -= 1;
             source.PlayOneShot(KazaSesi);
+            Destroy(collision.transform.gameObject);
             if (Can > 0)
             {
                 StartCoroutine(Yavaþlat());
-                Destroy(collision.transform.gameObject);
             }
             if (Can <= 0)
             {
-                Death();
+                GetComponent<CarMove>().enabled = false;
+                Time.timeScale = 0;
+                DeathScreen.SetActive(true);
             }
         }
         if (collision.transform.gameObject.tag == "Para")
@@ -63,17 +68,21 @@ public class Car : MonoBehaviour
         yield return new WaitForSeconds(1);
         progress.CarSpeed = 10;
     }
-    void Death()
+    public void Death()
     {
-        GetComponent<CarMove>().enabled = false;
-        Time.timeScale = 0;
-        DeathScreen.SetActive(true);
-        TotalAltin = PlayerPrefs.GetInt("TotalAltin");
-        PlayerPrefs.SetInt("TotalAltin", TotalAltin + gold.Altin);
+        TotalAltin = PlayerPrefs.GetFloat("TotalAltin");
+        PlayerPrefs.SetFloat("TotalAltin", TotalAltin + gold.Altin);
         HighScore = PlayerPrefs.GetFloat("HighScore");
         if (Puan > HighScore)
         {
             PlayerPrefs.SetFloat("HighScore", Puan);
         }
+    }
+    public void Resume()
+    {
+        GetComponent<CarMove>().enabled = true;
+        Time.timeScale = 1;
+        DeathScreen.SetActive(false);
+        Can = 1;
     }
 }
